@@ -3,13 +3,9 @@ import Button from '../components/Button';
 import './Facts.css';
 
 import { catFacts, catPics } from '../assets/cats'
-import cat_clone from '../assets/cats/cat_clone.png'
-
 
 const Facts = () => {
   const [catFact, setCatFact] = useState(null);
-
-  const [catPic, setCatPic] = useState(null);
   const [picNumber, setPicNumber] = useState(0);
 
   const [buttonClicked, setButtonClicked] = useState(false);
