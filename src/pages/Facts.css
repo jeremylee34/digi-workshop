@@ -4,13 +4,13 @@
     padding: 0; 
 }
 
-.fact-container { 
+.container { 
     display: flex;
     flex-direction: column;
     gap: 2rem;
     align-items: center;
     margin: 50px auto;
-    min-height: 50vh;
+    min-height: 75vh;
     max-width: 70vw;
     overflow: auto;
     border: 3px solid lightcoral;
@@ -18,7 +18,7 @@
     border-radius: 5px;
 }
 
-.fact-header {
+.header {
     text-align: center;
     margin: 10px auto;
     font-size: 3rem;
