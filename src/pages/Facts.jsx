@@ -21,7 +21,7 @@ const Facts = () => {
     // Get random fact 
     const randIndex = Math.floor(Math.random() * catFacts.length);
     setCatFact(catFacts[randIndex]);
-    if (picNumber < 20) {
+    if (picNumber < 19) {
       setPicNumber(prev => prev + 1)
     } else {
       setPicNumber(0)
