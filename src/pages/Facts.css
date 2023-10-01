@@ -21,7 +21,7 @@
 .fact-header {
     text-align: center;
     margin: 10px auto;
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 400;
     color: lightcoral;
 }
@@ -31,7 +31,7 @@
     color: #fff;
     border: none;
     font-size: large;
-    width: 300px;
+    width: 400px;
     height: 50px;
     border-radius: 5px;
     cursor: pointer;
@@ -48,4 +48,16 @@
     font-weight: normal;
     font-size: 2rem;
     text-align: center;
+}
+
+.img-container {
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+  
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
