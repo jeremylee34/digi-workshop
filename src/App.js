@@ -7,8 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Ryan from './pages/Ryan'
 import Facts from './pages/Facts'
-import Background from './pages/Background'
-import Hello from './pages/Hello'
+import Xray from './pages/Xray'
 
 function App() {
   return (
@@ -17,8 +16,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Ryan />}/>
         <Route path='/facts' element={<Facts />}/>
-        <Route path='/background' element={<Background />}/>
-        <Route path='/hello' element={<Hello />}/>
+        <Route path='/xray' element={<Xray />}/>
       </Routes>
     </BrowserRouter>
   );
