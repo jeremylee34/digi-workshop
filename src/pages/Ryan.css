@@ -1,0 +1,16 @@
+.img-container { 
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.cover-img { 
+    width: 50%;
+}
+
+.cover-img:hover { 
+    cursor: pointer;
+    transform: scale(1.1); 
+    transition-duration: 0.3s ease;
+}
