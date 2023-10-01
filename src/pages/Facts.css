@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.fact-container { 
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin: 50px auto;
+    min-height: 50vh;
+    max-width: 70vw;
+    overflow: auto;
+    border: 3px solid lightcoral;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.fact-header {
+    text-align: center;
+    margin: 10px auto;
+    font-size: 5rem;
+    font-weight: 400;
+    color: lightcoral;
+}
+
+.button {
+    background: lightcoral;
+    color: #fff;
+    border: none;
+    font-size: large;
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.button:hover {
+    background: #006C67;
+    transform: scale(1.1); 
+    transition-duration: 300ms;
+}
+
+.cat-fact {
+    font-weight: normal;
+    font-size: 2rem;
+    text-align: center;
+}
