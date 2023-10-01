@@ -1,12 +1,12 @@
 import { useState, React } from 'react';
 
-import dog from '../images/species/dog.jpg';
-import fish from '../images/species/fish.jpg';
-import dogfish from '../images/species/dogfish.jpg';
-import xray from '../images/species/xray.jpg';
-import mike from '../images/species/mike.jpg';
+import dog from '../images/xray/dog.jpg';
+import fish from '../images/xray/fish.jpg';
+import dogfish from '../images/xray/dogfish.jpg';
+import xray from '../images/xray/xray.jpg';
+import mike from '../images/xray/mike.jpg';
 
-const Species = () => {
+const Xray = () => {
   const [inputText, setInputText] = useState('');
   const [result, setResult] = useState(xray);
 
@@ -49,4 +49,4 @@ const Species = () => {
 };
 
 
-export default Species
+export default Xray
