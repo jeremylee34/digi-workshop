@@ -14,7 +14,6 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <Facts />
       <Routes>
         <Route path='/' element={<Ryan />}/>
         <Route path='/facts' element={<Facts />}/>
