@@ -25,12 +25,12 @@ const Facts = () => {
   }
 
   return (
-    <div className='fact-container'>
+    <div className='container'>
       <div class='img-container'>
         <img src={catPics[picNumber]} alt='cat pic'/>
       </div>
       <Button
-        buttonLabel={buttonClicked ? 'Another!' : 'Press to get a cool cat fact!'}
+        buttonLabel={buttonClicked ? 'Another one 🗿' : 'Press to get a cool cat fact!'}
         onClick={handleClick}
       />
       <h1 className='cat-fact'>{catFact}</h1>
