@@ -1,7 +1,10 @@
-import React from 'react'
+import { useState, React } from 'react';
+import Button from '../components/Button';
+import './Facts.css';
 
 const Facts = () => {
-
+  const [catFact, setCatFact] = useState(null);
+  const [buttonClicked, setButtonClicked] = useState(false);
   const catFacts = [
     "Cats have a strong territorial instinct and often mark their territory with scent markings.",
     "A group of cats is called a clowder.",
@@ -25,9 +28,23 @@ const Facts = () => {
     "Cats have a strong hunting instinct, and even well-fed domestic cats may 'hunt' toys or insects."
   ];
   
+  function handleClick() {
+    // Change button label when clicked
+    if(!buttonClicked) setButtonClicked(true);
+    
+    // Get random fact 
+    const randIndex = Math.floor(Math.random() * catFacts.length);
+    setCatFact(catFacts[randIndex]);
+  }
+
   return (
-    <div>
-        
+    <div className='fact-container'>
+      <h1 className='fact-header'>Press to get a fun fact!</h1>
+      <Button
+        buttonLabel={buttonClicked ? 'Another!' : 'Get a cool cat fact!'}
+        onClick={handleClick}
+      />
+      <h1 className='cat-fact'>{catFact}</h1>
     </div>
   )
 }
