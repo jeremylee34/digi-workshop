@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Ryan from './pages/Ryan'
 import Facts from './pages/Facts'
-import Background from './pages/Background'
+import Species from './pages/Species'
 import Hello from './pages/Hello'
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Ryan />}/>
         <Route path='/facts' element={<Facts />}/>
-        <Route path='/background' element={<Background />}/>
+        <Route path='/species' element={<Species />}/>
         <Route path='/hello' element={<Hello />}/>
       </Routes>
     </BrowserRouter>
