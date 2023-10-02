@@ -3,7 +3,7 @@ import React from 'react'
 const Practice = () => {
   return (
     <div class='container'>
-        Practice here!
+        <h1 className='header'>Practice here!</h1>
     </div>
   )
 }
