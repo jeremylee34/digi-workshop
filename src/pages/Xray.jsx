@@ -37,7 +37,7 @@ const Xray = () => {
 
   return (
     <div className='container'>
-      <h1 className='header'>what species (only dog or fishes allowed btw)?</h1>
+      <h1 className='header'>list your bag contents below. can only detect dog or fishes unfortunately</h1>
       <input
         type="text"
         placeholder="let's xray something..."

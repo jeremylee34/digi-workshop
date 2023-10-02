@@ -6,12 +6,12 @@ import crying from '../images/cats/crying.png';
 import cry from '../images/cats/cry.png';
 import cupcat from '../images/cats/cupcat.png';
 import mecatnic from '../images/cats/mecatnic.png';
+import obi from '../images/cats/obi.png'
 import ptsd from '../images/cats/ptsd.png';
 import scream1 from '../images/cats/scream1.png';
 import scream2 from '../images/cats/scream2.png';
 import sleepy from '../images/cats/sleepy.png';
 import slep from '../images/cats/slep.png';
-import tongue from '../images/cats/tongue.png';
 import trinity from '../images/cats/trinity.png';
 import vietnam from '../images/cats/vietnam.png';
 import wasted from '../images/cats/wasted.png';
@@ -60,7 +60,7 @@ export const catPics = [
   crying,
   chill,
   cat_slipper,
-  tongue,
+  obi,
   cat_clone,
   trinity,
 ];
