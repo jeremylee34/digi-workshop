@@ -9,7 +9,10 @@ import xray from '../images/xray/xray.jpg';
 import mike from '../images/xray/mike.jpg';
 import empty from '../images/xray/empty.webp';
 
+
+// ToDo: Make a species detector for dogs and fish
 const Xray = () => {
+  // Put main logic/hooks here 
   const [inputText, setInputText] = useState('');
   const [result, setResult] = useState(xray);
 
