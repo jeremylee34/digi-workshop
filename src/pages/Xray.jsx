@@ -6,7 +6,10 @@ import dogfish from '../images/xray/dogfish.jpg';
 import xray from '../images/xray/xray.jpg';
 import mike from '../images/xray/mike.jpg';
 
+
+// ToDo: Make a species detector for dogs and fish
 const Xray = () => {
+  // Put main logic/hooks here 
   const [inputText, setInputText] = useState('');
   const [result, setResult] = useState(xray);
 
@@ -31,6 +34,7 @@ const Xray = () => {
   };
 
   return (
+    // Put JSX here
     <div class='container'>
       <h1 class='header'>what species (only dog or fishes allowed btw)?</h1>
       <input

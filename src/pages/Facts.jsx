@@ -4,10 +4,11 @@ import './Facts.css';
 
 import { catFacts, catPics } from '../assets/cats'
 
+// ToDo: Make a random cat fact generator 
 const Facts = () => {
+  // Put main logic/hooks here 
   const [catFact, setCatFact] = useState(null);
   const [picNumber, setPicNumber] = useState(0);
-
   const [buttonClicked, setButtonClicked] = useState(false);
   
   function handleClick() {
@@ -25,6 +26,7 @@ const Facts = () => {
   }
 
   return (
+    // Put JSX here
     <div className='container'>
       <div class='img-container'>
         <img src={catPics[picNumber]} alt='cat pic'/>
