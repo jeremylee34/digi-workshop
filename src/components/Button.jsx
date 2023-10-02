@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Button = ({ buttonLabel, onClick }) => {
+const Button = ( { onClick, ...props }) => {
   return (
     <div>
         <button 
           className='button'
           onClick={onClick}
         >
-            <h2 className='button-label'>{buttonLabel}</h2>
+            <h2 className='button-label'>{props.children}</h2>
         </button>
     </div>
   )

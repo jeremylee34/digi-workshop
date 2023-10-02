@@ -11,11 +11,10 @@ const Ryan = () => {
   }
 
   return (
-    <div className='img-container'>
+    <div className='ryan-box'>
       <img 
         src={imgClick ? gremlin : spoon} 
         alt="gremlin"
-        className='cover-img'
         onClick={handleImgClick}
       />
     </div>

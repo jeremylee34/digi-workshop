@@ -1,10 +1,13 @@
 import { useState, React } from 'react';
 
+import Button from '../components/Button';
+
 import dog from '../images/xray/dog.jpg';
 import fish from '../images/xray/fish.jpg';
 import dogfish from '../images/xray/dogfish.jpg';
 import xray from '../images/xray/xray.jpg';
 import mike from '../images/xray/mike.jpg';
+import empty from '../images/xray/empty.webp';
 
 const Xray = () => {
   const [inputText, setInputText] = useState('');
@@ -20,6 +23,8 @@ const Xray = () => {
       imageSrc = dog;
     } else if (lowercaseText.includes('fish')) {
       imageSrc = fish;
+    } else if (lowercaseText.length === 0) {
+      imageSrc = empty;
     }
     setResult(imageSrc);
   };
@@ -31,8 +36,8 @@ const Xray = () => {
   };
 
   return (
-    <div class='container'>
-      <h1 class='header'>what species (only dog or fishes allowed btw)?</h1>
+    <div className='container'>
+      <h1 className='header'>what species (only dog or fishes allowed btw)?</h1>
       <input
         type="text"
         placeholder="let's xray something..."
@@ -40,7 +45,7 @@ const Xray = () => {
         onChange={(e) => setInputText(e.target.value)}
         onKeyPress={handleKeyPress}
       />
-      <button onClick={checkText}>Check</button>
+      <Button onClick={checkText}>Check</Button>
       <div class='img-container'>
         <img src={result} alt="Result" />
       </div>
