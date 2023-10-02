@@ -1,9 +1,8 @@
-.img-container { 
+.ryan-box img { 
     width: 100vw;
     height: 100vh;
-    margin: 10rem auto;
 }
 
-.cover-img:hover { 
+.ryan-box:hover { 
     cursor: pointer;
 }
